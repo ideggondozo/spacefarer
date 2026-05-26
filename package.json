@@ -1,0 +1,27 @@
+{
+  "name": "galactic-spacefarer",
+  "version": "1.0.0",
+  "description": "Welcome to your new CAP project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-spacefarer-ui": "cds watch --open spacefarerui/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cap-js/sqlite": "^2.4.0",
+    "@sap/cds": "^9.9.1",
+    "sqlite3": "^6.0.1"
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "devDependencies": {
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "sapux": [
+    "app/spacefarer-ui"
+  ]
+}

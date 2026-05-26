@@ -1,0 +1,25 @@
+{
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "elek": {
+            "password": "1234",
+            "roles": ["authenticated-user"],
+            "attr": {
+              "originPlanet": "Earth"
+            }
+          },
+          "bernadett": {
+            "password": "1234",
+            "roles": ["authenticated-user"],
+            "attr": {
+              "originPlanet": "Mars"
+            }
+          }
+        }
+      }
+    }
+  }
+}
