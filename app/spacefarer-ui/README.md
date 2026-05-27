@@ -31,7 +31,3 @@ http://localhost:4004/spacefarer-ui/webapp/index.html
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
-##### Mock users:
-
-elek / 1234
-bernadett / 1234

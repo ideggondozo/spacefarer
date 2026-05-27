@@ -41,3 +41,8 @@ npm install
 cds deploy --to sqlite
 
 cds watch
+
+### Mock users:
+
+elek / 1234
+bernadett / 1234
