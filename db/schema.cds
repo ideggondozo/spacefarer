@@ -35,8 +35,8 @@ entity Spacefarer : cuid, managed {
     lastName : String(100) not null;
 
     @title : 'Email Address'
-    email : String(255);
-
+    email : String(255) @assert.format: '^[^@]+@[^@]+\.[^@]+$';
+    
     @title : 'Origin Planet'
     originPlanet : String(100);
 
@@ -44,10 +44,10 @@ entity Spacefarer : cuid, managed {
     spacesuitColor : String(50) default 'Silver';
 
     @title : 'Stardust Collection'
-    stardustCollection : Integer default 0;
+    stardustCollection : Integer default 0 @assert.range: [0, 100000];
 
     @title : 'Wormhole Navigation Skill'
-    wormholeNavigationSkill : Integer default 0;
+    wormholeNavigationSkill : Integer default 0 @assert.range: [0, 100];
 
     @title : 'Mission Rank'
     missionRank : String(50);
