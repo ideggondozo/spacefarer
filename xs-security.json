@@ -1,0 +1,25 @@
+{
+  "xsappname": "galactic-spacefarer",
+  "tenant-mode": "dedicated",
+  "attributes": [
+    {
+      "name": "originPlanet",
+      "valueType": "string"
+    }
+  ],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.SpacefarerUser",
+      "description": "Spacefarer User"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "SpacefarerUser",
+      "description": "Spacefarer User",
+      "scope-references": [
+        "$XSAPPNAME.SpacefarerUser"
+      ]
+    }
+  ]
+}
