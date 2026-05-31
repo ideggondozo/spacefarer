@@ -41,13 +41,13 @@ entity Spacefarer : cuid, managed {
     originPlanet : String(100);
 
     @title : 'Spacesuit Color'
-    spacesuitColor : String(50) default 'Silver';
+    spacesuitColor : Association to SpacesuitColor;
 
     @title : 'Stardust Collection'
-    stardustCollection : Integer default 0 @assert.range: [0, 100000];
+    stardustCollection : Integer @assert.range: [0, 100000];
 
     @title : 'Wormhole Navigation Skill'
-    wormholeNavigationSkill : Integer default 0 @assert.range: [0, 100];
+    wormholeNavigationSkill : Integer @assert.range: [0, 100];
 
     @title : 'Mission Rank'
     missionRank : String(50);
@@ -60,4 +60,13 @@ entity Spacefarer : cuid, managed {
 
     @title : 'Position'
     position : Association to Position;
+}
+
+entity SpacesuitColor {
+
+    @title : 'Color Code'
+    key code : String(20);
+
+    @title : 'Color Name'
+    name : String(100);
 }

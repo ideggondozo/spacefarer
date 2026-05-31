@@ -27,8 +27,8 @@ module.exports = cds.service.impl(async function () {
             data.wormholeNavigationSkill = 100;
         }
 
-        if (!data.spacesuitColor) {
-            data.spacesuitColor = 'Silver';
+        if (!data.spacesuitColor_code) {
+            data.spacesuitColor_code = 'SILVER';
         }
     });
 

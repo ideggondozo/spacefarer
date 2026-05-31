@@ -7,4 +7,5 @@ service GalacticService @(requires: 'authenticated-user') {
 
     entity Departments as projection on galactic.Department;
     entity Positions as projection on galactic.Position;
+    entity SpacesuitColors as projection on galactic.SpacesuitColor;
 }
