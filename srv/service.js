@@ -22,12 +22,6 @@ module.exports = cds.service.impl(async function () {
             );
         }
 
-        if (data.stardustCollection < 0) {
-            req.error(
-                400,
-                'Stardust collection cannot be negative'
-            );
-        }
 
         if (data.wormholeNavigationSkill > 100) {
             data.wormholeNavigationSkill = 100;
